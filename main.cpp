@@ -18,7 +18,7 @@ class Color {
         int getBlue() const { return Blue;}
         // Display method
         void display() const { 
-            cout << "RGB(Red:" << Red << ", Green:" << Green << ", Blue:" << Blue << ")" << endl; 
+            cout << "Decimal RGB: (" << Red << ", " << Green << ", " << Blue << ")" << endl; 
         }
 };
 
@@ -40,13 +40,13 @@ int main() {
     forestGreen.setGreen(139);
     forestGreen.setBlue(34);
 
-    cout << "Teal: "; 
+    cout << "Teal "; 
     teal.display();
-    cout << "Magenta: "; 
+    cout << "Magenta "; 
     magenta.display();
-    cout << "Tan: "; 
+    cout << "Tan "; 
     tan.display();
-    cout << "Forest Green: "; 
+    cout << "Forest Green "; 
     forestGreen.display();
 
     return 0;
