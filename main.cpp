@@ -4,7 +4,7 @@
 #include <iostream>
 
 using namespace std; 
-
+// class definition for Color with private variables and public methods
 class Color {
     private: 
         int Red, Green, Blue; 
@@ -14,15 +14,17 @@ class Color {
         void setGreen(int g) { Green = g;}
         void setBlue(int b) { Blue = b;}
         int getRed() const { return Red;}
+        // all getters use const to indicate they do not modify the object
         int getGreen() const { return Green;}
         int getBlue() const { return Blue;}
-        // Display method
+        // Display method, also const 
         void display() const { 
             cout << "Decimal RGB: (" << Red << ", " << Green << ", " << Blue << ")" << endl; 
         }
 };
 
 int main() {
+    // Creating Color objects and setting their RGB values
     Color teal = Color();
     teal.setRed(0);
     teal.setGreen(128);
@@ -39,7 +41,7 @@ int main() {
     forestGreen.setRed(34);
     forestGreen.setGreen(139);
     forestGreen.setBlue(34);
-
+    // Displaying the RGB values of each color using the display method
     cout << "Teal "; 
     teal.display();
     cout << "Magenta "; 
