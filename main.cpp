@@ -23,7 +23,31 @@ class Color {
 };
 
 int main() {
-    
+    Color teal = Color();
+    teal.setRed(0);
+    teal.setGreen(128);
+    teal.setBlue(128);
+    Color magenta = Color();
+    magenta.setRed(255);
+    magenta.setGreen(0);
+    magenta.setBlue(255);
+    Color tan = Color();
+    tan.setRed(210);
+    tan.setGreen(180);
+    tan.setBlue(140);
+    Color forestGreen = Color();
+    forestGreen.setRed(34);
+    forestGreen.setGreen(139);
+    forestGreen.setBlue(34);
+
+    cout << "Teal: "; 
+    teal.display();
+    cout << "Magenta: "; 
+    magenta.display();
+    cout << "Tan: "; 
+    tan.display();
+    cout << "Forest Green: "; 
+    forestGreen.display();
 
     return 0;
 }
